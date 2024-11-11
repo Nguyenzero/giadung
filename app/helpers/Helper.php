@@ -16,14 +16,17 @@ class Helper
            
            $html .= '  <tr>
 
+          <td>'. $menu->id .'</td>
+          <td>'.$char. $menu->name .'</td>
+          <td>'. $menu->active .'</td>
+          <td>'. $menu->updated_at .'</td>
+          <td> 
+            
+          <a   class="btn btn-primary btn"  href ="/admin/menus/edit/'. $menu->id   .'" ><i class= "fas fa-edit"></i></a>
 
-    <td>'. $menu->id .'</td>
-    <td>'.$char. $menu->name .'</td>
-    <td>'. $menu->active .'</td>
-    <td>'. $menu->update_at .'</td>
-    <td>diwdwd</td>
+        </td>
 
-</tr>
+                </tr>
     ';
 
     unset($menus[$key]);
